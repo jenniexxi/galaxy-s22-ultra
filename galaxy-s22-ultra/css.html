@@ -1,0 +1,120 @@
+<style scoped>
+    /* ++++++++++++++ common ++++++++++++++  */
+    .p-br, .pt-br, .pm-br {display:block !important;}
+    .t-br, .m-br, .tm-br {display:none !important;}
+    .s2 .p-br, .s2 .m-br, .s2 .pm-br {display:none !important;}
+    .s2 .t-br, .s2 .pt-br, .s2 .tm-br {display:block !important;}
+    .s1 .p-br, .s1 .t-br, .s1 .pt-br {display:none !important;}
+    .s1 .m-br, .s1 .pm-br, .s1 .tm-br {display:block !important;}
+
+    #contents {overflow:unset;}
+    #footer {z-index:3;}
+
+    .sticky-menu .btn-gnb- {opacity: 1!important; display: none;}
+    .j1 .sticky-menu.float .btn-gnb- {display: block;}
+    .j1 .sticky-menu.m-top.v-nbuy .heading {right:65px;}
+    .j1 .sticky-menu.m-top {top:0;}
+
+    /* kv */
+    #kv-type2 {padding-top:84px;}
+    .j1 #kv-type2 {padding-top:100px;}
+    @media screen and (min-width:1024px) {
+        .showroom .m_content-overview .m_article-overview {padding:134px 60px 50px;}
+    }
+    @media screen and (min-width:1024px) and (max-width:1440px) {
+        .showroom .m_content-overview .m_article-overview {padding:124px 24px 40px;}
+    }
+    @media screen and (min-width:768px) and (max-width:1023px) {
+        .showroom .m_content-overview .m_article-overview {padding:116px 40px 65px;}
+    }
+    @media screen and (max-width:767px) {
+        .showroom .m_content-overview .m_article-overview {padding:136px 15px 30px;}
+    }
+
+    /* disclaimer */
+    #desc-section.m_content-desc {border-top:0 !important;}
+    #desc-section.m_content-desc article {padding:42px 30px 40px; box-sizing:border-box;}
+    #desc-section.m_content-desc .f_header-type1 {max-width:1380px !important;}
+    #desc-section.m_content-desc .f_header-type1 li {font-size:12px;font-family:'ヒラギノ角ゴ Pro','Hiragino Kaku Gothic Pro',メイリオ,Meiryo,Osaka,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;font-weight:400;line-height:22px;}
+    #desc-section.m_content-desc .m_feature-desc .txt.t2 {padding-top: 20px; color: #666; font-size: 12px; font-family:'ヒラギノ角ゴ Pro','Hiragino Kaku Gothic Pro',メイリオ,Meiryo,Osaka,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;font-weight:400; line-height: 22px;}
+    #desc-section.m_content-desc .m_feature-desc .txt.t2 li {padding-left: 14px; text-indent: -14px;list-style-type: none;}
+    .s3 #desc-section.m_content-desc .f_header-type1,
+    .s2 #desc-section.m_content-desc .f_header-type1 {max-width:100% !important;}
+    .s1 #desc-section.m_content-desc article {padding:40px 0 38px;}
+    .s1 #desc-section.m_content-desc .f_header-type1 {margin:0 15px;}
+    .s0 #desc-section.m_content-desc .f_header-type1 {margin:0 10px;padding:0 0;}
+
+    /* font */
+    #kv-type2 .kv-title,
+    .c_title-type1,
+    .c_title-type2,
+    [class*=f_header-type] [class*=c_feature-type],
+    [class*=f_header-type] [class*=c_section-type],
+    .m_feature_banner .f_header-type1 .c_banner_title-type1,
+    .m_banner_ar .c_banner_ar-title,
+    .m_content-feature .f_header-feature .c_title-type1,
+    .models_modal-goods-header .models_modal-goods-title,
+    .models_modal-goods .c_color-title,
+    .models_modal-goods .colorchip input[type=radio]:checked~.colorchip-name,
+    .models_modal-goods .models_modal-device-btn
+     {font-family:sharpsans,'ヒラギノ角ゴ Pro','Hiragino Kaku Gothic Pro',メイリオ,Meiryo,Osaka,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;font-weight:700;letter-spacing:0;}
+
+    [class*=f_header-type] [class*=c_cate-type],
+    .m_feature_jump .jump_contents .c_jump-title,
+    .f_header-nav .heading-nav .heading-nav-list li,
+    .c_btn_f3 span.copy,
+    .m_content-feature .f_header-feature>.bottom .btn-tap,
+    .actions .btn-info,
+    .m_content-feature .f_header-feature .c_cate-type1,
+    .models_modal-colors-btn button,
+    .models_modal-goods .c_color-title {font-family:'ヒラギノ角ゴ Pro','Hiragino Kaku Gothic Pro',メイリオ,Meiryo,Osaka,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;font-weight:700;letter-spacing:0;}
+
+    .c_desc-type1,
+    .c_desc-type2,
+    [class*=f_header-type] [class*=c_desc-type],
+    .m_content-kv .kv-desc,
+    .m_banner_why-galaxy .m_feature_why-galaxy .f_header-type1 .c_banner_tit-type2,
+    .m_feature_banner .f_header-type1 .c_banner_desc-type1,
+    .m_feature_banner .f_header-type1 .c_banner_desc-type2,
+    .m_content-feature .f_header-feature .c_body-type1,
+    .m_content-feature .f_header-feature .c_desc-type1,
+    .m_content-feature .f_container .f_video-feature .m_video-wrap .btn_click-video span,
+    .models_modal-goods .colorchip .colorchip-name {font-family:'ヒラギノ角ゴ Pro','Hiragino Kaku Gothic Pro',メイリオ,Meiryo,Osaka,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;font-weight:400;}
+
+    /* size */
+    .m_feature_banner .f_header-type1 .c_banner_title-type1 {display:block;}
+
+    @media screen and (min-width:1024px) {
+        .m_feature_jump .jump_contents .c_jump-title {font-size:15px;}
+        .m_feature_banner .f_header-type1 .c_banner_title-type1 {font-size:42px;line-height:1.3;}
+    }
+
+    @media screen and (min-width:1441px) {
+        .m_feature_banner .f_header-type1 .c_banner_desc-type1 {font-size:15px;}
+    }
+
+    @media screen and (min-width:768px) and (max-width:1023px) {
+        .m_feature_banner .f_header-type1 .c_banner_title-type1 {font-size:21px;line-height:1.3;}
+        .m_feature_banner .f_header-type1 .c_banner_desc-type1,
+        .m_banner_why-galaxy .m_feature_why-galaxy .f_header-type1 .c_banner_desc-type1 {font-size:13px;}
+    }
+
+    @media screen and (max-width:767px) {
+        .m_feature_jump .jump_contents .c_jump-title {font-size:12px;}
+        .m_feature_banner .f_header-type1 .c_banner_title-type1 {font-size:26px;}
+        .m_feature_banner .f_header-type1 .c_banner_desc-type1 {font-size:13px;}
+    }
+
+    @media screen and (min-width:1024px) {
+        .m_feature_smart-switch .c_banner_title-type1 {width:335px !important;}
+    }
+
+    .modal.show {z-index:4;top:0!important;}
+
+    html.color_yb .c_btn_f3,
+    html.color_yb .c_btn_f3:after {background-color:#000!important;}
+    html.color_yb .c_btn_f3 span {color:#fff01f!important;}
+
+    /*html.color_yb .m_content-accessories article.m_feature-content .parallax .info {color:#fff01f!important;background-color:#000!important;}
+    html.color_yb .faq_item_q button {color:#000!important;background-color:#fff01f!important;}*/
+</style>
